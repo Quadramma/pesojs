@@ -1,6 +1,3 @@
-//Create by Javi
-//https://github.com/Quadramma
-//Thanks to PicoCSS lib ! https://github.com/vladocar/picoCSS.
 (function() {
 	var e, t, n;
 	n = document, t = function() {
@@ -77,6 +74,7 @@ var $ = function(a) {
 			this.each(function(e, ctx) {
 				e.appendChild(elem);
 			});
+			return this;
 		},
 		appendTo: function(target) {
 			this.each(function(e, c) {
@@ -84,11 +82,13 @@ var $ = function(a) {
 					a.appendChild(e);
 				});
 			});
+			return this;
 		},
 		prepend: function() {
 			this.each(function(e, ctx) {
 				e.insertBefore(elem, e.firstChild);
 			});
+			return this;
 		},
 		prependTo: function(target) {
 			this.each(function(e, c) {
@@ -96,6 +96,7 @@ var $ = function(a) {
 					a.insertBefore(e, a.firstChild);
 				});
 			});
+			return this;
 		},
 		css: function(a) {
 			this.each(function(e, ctx) {
@@ -173,4 +174,3 @@ $.create = function(selector) {
 	local$.value = [dom];
 	return local$;
 };
-
