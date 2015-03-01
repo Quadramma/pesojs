@@ -1,4 +1,4 @@
-# Peso js
+# Peso (3.99kb)
 
 Minimalistic Lib for Jquery remplacement.
 
